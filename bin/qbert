@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'qbert'
+
+content = File.read(ARGV.shift || "")
+
+QBert::Runner.new(content).run
